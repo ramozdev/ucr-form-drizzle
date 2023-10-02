@@ -1,0 +1,48 @@
+{
+  "name": "cud-form-drizzle",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "postinstall": "dotenv drizzle-kit generate:mysql",
+    "db:push": "dotenv drizzle-kit push:mysql",
+    "db:studio": "dotenv drizzle-kit studio --port 5555",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.1",
+    "@planetscale/database": "^1.11.0",
+    "@t3-oss/env-nextjs": "^0.6.1",
+    "drizzle-orm": "^0.28.6",
+    "next": "^13.5.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.47.0",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.44.3",
+    "@types/node": "^18.18.1",
+    "@types/react": "^18.2.24",
+    "@types/react-dom": "^18.2.8",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "autoprefixer": "^10.4.16",
+    "dotenv-cli": "^7.3.0",
+    "drizzle-kit": "^0.19.13",
+    "eslint": "^8.50.0",
+    "eslint-config-next": "^13.5.3",
+    "mysql2": "^3.6.1",
+    "postcss": "^8.4.31",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.4",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2"
+  },
+  "ct3aMetadata": {
+    "initVersion": "7.20.2"
+  },
+  "packageManager": "pnpm@8.7.6"
+}
