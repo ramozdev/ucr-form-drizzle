@@ -5,7 +5,7 @@ import { mysqlTable, serial, varchar } from "drizzle-orm/mysql-core";
 const todos = mysqlTable("todos", {
   id: serial("id").primaryKey(),
   name: varchar("name", { length: 110 }).notNull(),
-  description: varchar("description", { length: 256 }).notNull(),
+  description: varchar("description", { length: 256 }),
 });
 
 const todosRelations = relations(todos, ({ many }) => ({

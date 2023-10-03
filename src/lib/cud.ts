@@ -6,6 +6,26 @@ export type CudObject = Record<
   }
 >;
 
+export function processObjectCreate(object: CudObject) {
+  const isCreate = Object.values(object).some(
+    ({ action }) => action === "CREATE",
+  );
+
+  if (!isCreate) return [];
+
+  return [
+    Object.entries(object).reduce<Record<string, string | boolean>>(
+      (acc, [key, item]) => {
+        if (item.action === "CREATE") {
+          acc[key] = item.value;
+        }
+        return acc;
+      },
+      {},
+    ),
+  ];
+}
+
 export function processObjectUpdate(object: CudObject) {
   const isUpdate = Object.values(object).some(
     ({ action }) => action === "UPDATE",

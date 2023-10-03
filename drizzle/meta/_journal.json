@@ -1,0 +1,13 @@
+{
+  "version": "5",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1696345232628,
+      "tag": "0000_abandoned_captain_midlands",
+      "breakpoints": true
+    }
+  ]
+}
