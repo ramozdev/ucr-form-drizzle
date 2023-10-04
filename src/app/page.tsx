@@ -1,11 +1,11 @@
 import Form from "@/app/form";
 import { getTodo } from "@/app/query";
-import type { CudTodoInput } from "@/app/validation";
+import type { UcrTodoInput } from "@/app/validation";
 
 export default async function Home() {
   const { tasks, ...todo } = await getTodo();
 
-  const defaultData: CudTodoInput = {
+  const defaultData: UcrTodoInput = {
     todo: {
       todoId: {
         action: "ID",
