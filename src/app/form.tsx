@@ -4,7 +4,7 @@ import { type UcrTodoInput, ucrTodoSchema } from "@/app/validation";
 import { useFieldArray, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { startTransition } from "react";
-import { getUCR } from "@/lib/ucr";
+import { getUCR } from "ucr";
 import { handleForm } from "@/app/_action/handleForm";
 
 type Props = {

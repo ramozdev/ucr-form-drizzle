@@ -29,6 +29,9 @@ dependencies:
   react-hook-form:
     specifier: ^7.47.0
     version: 7.47.0(react@18.2.0)
+  ucr:
+    specifier: ^0.0.2
+    version: 0.0.2
   zod:
     specifier: ^3.22.2
     version: 3.22.2
@@ -3360,6 +3363,10 @@ packages:
     resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
     engines: {node: '>=14.17'}
     hasBin: true
+
+  /ucr@0.0.2:
+    resolution: {integrity: sha512-Xov9A37X+/783cdVXcBQvMvIV4eQd4bOjgg7uXp7rXn30+QlzFxOAXTuCo31X7/7pzUYkyuemvN3sWVRPXEWCw==}
+    dev: false
 
   /unbox-primitive@1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
